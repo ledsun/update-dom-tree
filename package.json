@@ -1,0 +1,34 @@
+{
+  "name": "update-dom-tree",
+  "description": "This is a JavaScript function to update DOM tree according to given html.",
+  "version": "0.0.1",
+  "author": "ledsun",
+  "bugs": {
+    "url": "https://github.com/ledsun/update-dom-tree/issues"
+  },
+  "homepage": "https://github.com/ledsun/update-dom-tree",
+  "keywords": [
+    "browser",
+    "dom",
+    "patch"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "publinh": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ledsun/update-dom-tree.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "beefy example.js"
+  },
+  "dependencies": {
+    "parse5": "^3.0.3"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^14.5.0",
+    "handlebars": "^4.0.11"
+  }
+}
