@@ -1,7 +1,7 @@
 {
   "name": "update-dom-tree",
   "description": "This is a JavaScript function to update DOM tree according to given html.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ledsun",
   "bugs": {
     "url": "https://github.com/ledsun/update-dom-tree/issues"
