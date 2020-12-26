@@ -24,7 +24,6 @@
     "example": "beefy example.js"
   },
   "dependencies": {
-    "mime": "^2.3.1",
     "parse5": "^5.0.0"
   },
   "devDependencies": {
