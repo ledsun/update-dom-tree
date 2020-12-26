@@ -13,6 +13,9 @@
     "beefy": "^2.1.8",
     "browserify": "^17.0.0"
   },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
   "homepage": "https://github.com/ledsun/update-dom-tree",
   "keywords": [
     "browser",
