@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "beefy": "^2.1.8",
-    "browserify": "^16.2.2"
+    "browserify": "^17.0.0"
   }
 }
