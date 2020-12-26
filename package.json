@@ -24,7 +24,7 @@
     "example": "beefy example.js"
   },
   "dependencies": {
-    "parse5": "^5.0.0"
+    "parse5": "^6.0.1"
   },
   "devDependencies": {
     "beefy": "^2.1.8",
