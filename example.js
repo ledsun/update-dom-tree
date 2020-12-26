@@ -1,7 +1,6 @@
 const {
   EventEmitter
 } = require('events')
-const Handlebars = require('handlebars')
 const updateDomTree = require('./')
 
 // Prepare a tareg HTML to update.
@@ -52,15 +51,19 @@ class Model extends EventEmitter {
 }
 
 // Declare a view.
-const template = Handlebars.compile(`
-<ul class="message"{{#if hasAttribute}} hoge{{/if}}>
-  {{#each dataList}}
-  <li>
-    <input type="checkbox"{{#if checked}} checked="checked"{{/if}}><span>{{message}}</span>
-  </li>
-  {{/each}}
-</ul>
-`)
+function template(context) {
+  const { hasAttribute, dataList } = context
+
+  return `
+  <ul class="message"${ hasAttribute ? ' hoge': ''}>
+    ${ dataList.map(({ checked, message }) => `
+    <li>
+      <input type="checkbox"${ checked ? ' checked="checked"': ''}><span>${message}</span>
+    </li>
+    `).join('\n')}
+  </ul>
+  `
+}
 
 function render(dom, model) {
   const html = template(model)
