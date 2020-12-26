@@ -105,7 +105,7 @@ npm i
 npm run example
 ```
 
-Open http://localhost:9966/
+Open http://localhost:8080/example.html
 
 ## TODO
 
